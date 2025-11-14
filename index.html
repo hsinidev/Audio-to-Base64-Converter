@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio to Base64 Converter | Client-Side & Secure</title>
+    <meta name="description" content="A free, client-side tool to encode audio files (MP3, WAV) to Base64 and decode Base64 strings back to playable audio. Secure, private, and works directly in your browser." />
+    <meta name="keywords" content="audio to base64, base64 encode audio, base64 decode audio, mp3 to base64, wav to base64, data uri, audio converter, javascript audio encoder, client-side tool" />
+    <meta property="og:title" content="Audio ↔ Base64 Converter | Client-Side & Secure" />
+    <meta property="og:description" content="Instantly convert audio files to Base64 data URIs or decode them back. No server uploads, 100% private and secure processing in your browser." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes gradient-pan {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      @keyframes twinkle {
+        0% { opacity: 0.3; transform: scale(0.9); }
+        100% { opacity: 1; transform: scale(1.1); }
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
